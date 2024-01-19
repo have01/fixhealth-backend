@@ -257,7 +257,9 @@ const doctors = [
 ]
 
 
-
+app.get('/', (req, res) => {
+    res.send("hello world");
+});
 // Define a route to get all books
 app.get('/api/books', (req, res) => {
     res.json(doctors);
